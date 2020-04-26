@@ -1,0 +1,12 @@
+﻿
+@model AuthAsp.Models.Employee
+@{
+    ViewData["Title"] = "Details";
+    var photoPath = "/images/" + Model.PhotoPath;
+}
+
+<h1>@Model.Name</h1>
+<img src="@photoPath"/>
+<h2>@Model.Email</h2>
+<h3>@Model.Department</h3>
+
